@@ -24,8 +24,8 @@ node {
       // login Azure
       withCredentials([usernamePassword(credentialsId: 'new-work', passwordVariable: 'AZURE_CLIENT_SECRET', usernameVariable: 'AZURE_CLIENT_ID')]) {
        sh '''
-          az login --service-principal -u $AZURE_CLIENT_ID -p $AZURE_CLIENT_SECRET -t $AZURE_TENANT_ID
-          az account set -s $AZURE_SUBSCRIPTION_ID
+          az login --service-principal -u d20e5843-0b7a-4f8b-a913-18d2f6ec5f45 -p njD8Q~QXkQkrFhPON2XDyKlbBLkw2tX-GU~vncIU -t db53b663-72da-481d-ac43-e5a95210ba09
+          az account set -s f3c5cb8c-25f2-44cd-ad2d-a9b2109b9f5a
         '''
       }
       // get publish settings
